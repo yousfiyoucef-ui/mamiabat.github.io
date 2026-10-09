@@ -541,6 +541,7 @@ function Header({
 
   return (
     <header className={`topbar ${solid ? "topbar--solid" : ""}`}>
+      <div className="motto-strip" dir="rtl" lang="ar">شعارنا : السلامة – الدقة – الالتزام</div>
       <LinkButton className="brand" to="/" navigate={navigate}>
         <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 52, width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
         <span className="brand-name">WHTL</span>
@@ -1612,6 +1613,7 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
         <span>© 2026 WHTL</span>
         <span>Developed by SITEMAGIQUE</span>
       </div>
+      <div className="motto-strip--bottom" lang="en">OUR MOTTO : Safety – Precision – Commitment</div>
     </footer>
   );
 }
