@@ -7,7 +7,6 @@ const en: Record<string, string> = {
   "Ouvrir le menu": "Open menu",
   "Menu mobile": "Mobile menu",
   "À propos": "About",
-  "Équipements": "Equipment",
   Ressources: "Resources",
   Solutions: "Solutions",
   Contact: "Contact",
