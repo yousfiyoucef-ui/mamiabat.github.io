@@ -279,7 +279,7 @@ export default function AdminPage({
             {t("Retour au site", "Back to website")}
           </a>
           <div className="admin-login-visual__content">
-            <span className="brand-mark">W</span>
+            <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
             <p>WHTL CMS</p>
             <h2>{t("Pilotez vos actualités depuis un espace sécurisé.", "Manage your news from a secure workspace.")}</h2>
             <span>
@@ -341,7 +341,7 @@ export default function AdminPage({
     <main className="admin-shell admin-dashboard">
       <aside className={`admin-sidebar ${sidebarOpen ? "is-open" : ""}`}>
         <div className="admin-sidebar__brand">
-          <span className="brand-mark">W</span>
+          <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
           <span>
             <strong>WHTL</strong>
             <small>Administration</small>

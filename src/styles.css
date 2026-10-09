@@ -66,7 +66,7 @@ img {
 }
 
 .topbar--solid {
-  background: rgba(12, 12, 12, 0.96);
+  background: rgba(31, 56, 100, 0.97);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
   padding-block: 14px;
 }
@@ -192,7 +192,7 @@ img {
 
 .language-dropdown button:hover,
 .language-dropdown button.is-active {
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -295,7 +295,7 @@ img {
   z-index: 60;
   display: grid;
   min-width: 250px;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
 }
@@ -414,7 +414,7 @@ img {
 }
 
 .primary-action--dark {
-  background: #111111;
+  background: #1f3864;
 }
 
 .play-action {
@@ -540,7 +540,7 @@ img {
 }
 
 .sector-tab.is-active {
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -706,7 +706,7 @@ img {
   display: grid;
   grid-template-columns: minmax(280px, 0.72fr) 1fr;
   gap: clamp(34px, 7vw, 110px);
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -825,7 +825,7 @@ img {
   grid-template-columns: minmax(280px, 0.56fr) 1fr;
   gap: clamp(26px, 5vw, 72px);
   align-items: stretch;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -887,7 +887,7 @@ img {
 }
 
 .talk-card:hover {
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -1021,7 +1021,7 @@ img {
 
 .media-controls button:hover {
   border-color: #111111;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -1044,7 +1044,7 @@ img {
   grid-template-rows: minmax(280px, 56vh) auto;
   min-width: 0;
   margin: 0;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
   scroll-snap-align: start;
 }
@@ -1055,7 +1055,7 @@ img {
   height: 100%;
   min-height: 280px;
   max-height: 620px;
-  background: #111111;
+  background: #1f3864;
   object-fit: cover;
 }
 
@@ -1104,7 +1104,7 @@ img {
 .resource-card span {
   width: fit-content;
   padding: 8px 10px;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
   font-size: 0.76rem;
   font-weight: 950;
@@ -1122,7 +1122,7 @@ img {
   grid-template-columns: minmax(280px, 0.9fr) minmax(280px, 0.7fr) auto;
   align-items: end;
   gap: clamp(24px, 5vw, 76px);
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -1406,7 +1406,7 @@ img {
 }
 
 .contact-details > a:hover {
-  background: #111111;
+  background: #1f3864;
 }
 
 .contact-details span,
@@ -1431,7 +1431,7 @@ img {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: clamp(30px, 6vw, 90px);
-  background: #0d0d0d;
+  background: #16294a;
   color: #ffffff;
 }
 
@@ -1723,7 +1723,7 @@ img {
   display: grid;
   min-height: 100vh;
   grid-template-columns: minmax(420px, 1.08fr) minmax(420px, 0.92fr);
-  background: #111111;
+  background: #1f3864;
 }
 
 .admin-login-visual {
@@ -1954,7 +1954,7 @@ img {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
 }
 
@@ -2124,7 +2124,7 @@ img {
   align-items: end;
   justify-content: space-between;
   gap: 30px;
-  background: #111111;
+  background: #1f3864;
   padding: clamp(28px, 5vw, 58px);
   color: #ffffff;
 }
@@ -2239,7 +2239,7 @@ img {
   top: 0;
   z-index: 20;
   min-height: 76px;
-  background: #111111;
+  background: #1f3864;
   padding: 12px clamp(18px, 4vw, 56px);
   color: #ffffff;
 }
@@ -2326,7 +2326,7 @@ img {
   min-width: 46px;
   height: 46px;
   place-items: center;
-  background: #111111;
+  background: #1f3864;
   color: #ffffff;
   font-weight: 950;
 }
@@ -2944,4 +2944,24 @@ img {
   .footer-bottom {
     flex-direction: column;
   }
+}
+
+/* Devise WHTL 2026 */
+.hero-motto {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.footer-motto {
+  margin: 8px 0 14px;
+  color: #e32219;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

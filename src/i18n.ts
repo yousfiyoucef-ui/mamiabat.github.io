@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import type { Language } from "./supabase";
 
 const en: Record<string, string> = {
+  "Sécurité • Précision • Engagement": "Safety • Precision • Commitment",
   "Navigation principale": "Main navigation",
   "Ouvrir le menu": "Open menu",
   "Menu mobile": "Mobile menu",
