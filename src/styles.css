@@ -2965,3 +2965,22 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/* Filigrane logo WHTL 2026 au fond des pages */
+.site-shell::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: url("/media/whtl-logo-2026.png") center / min(62vw, 560px) no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* Devise : arabe en haut, anglais en bas */
+.hero-motto[lang="ar"] {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+}

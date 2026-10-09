@@ -710,7 +710,7 @@ function HomePage({
         <div className="hero-scrim" />
         <div className="hero-content">
           <p className="hero-kicker">Freight Forwarding & Ship Agency Services</p>
-          <p className="hero-motto">Sécurité • Précision • Engagement</p>
+          <p className="hero-motto" dir="rtl" lang="ar">شعارنا : السلامة – الدقة – الالتزام</p>
           <h1>La logistique des projets les plus complexes.</h1>
           <p className="hero-copy">
             WHTL gère vos opérations logistiques, portuaires et de transport exceptionnel en
@@ -1565,7 +1565,7 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
         <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
         <strong>WHTL</strong>
         <p>Freight forwarding, consignation maritime, transport exceptionnel et Heavy Lift.</p>
-        <p className="footer-motto">Sécurité • Précision • Engagement</p>
+        <p className="footer-motto" lang="en">OUR MOTTO : Safety – Precision – Commitment</p>
         <div className="footer-contact">
           <a href="mailto:contact@whtl-dz.com">contact@whtl-dz.com</a>
           <a href="mailto:groupe@whtl-dz.com">groupe@whtl-dz.com</a>
