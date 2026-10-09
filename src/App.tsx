@@ -1508,6 +1508,13 @@ function ContactPage({ language }: { language: Language }) {
             Notre équipe vous accompagne pour vos opérations en Algérie et à l'international.
           </p>
           <div className="contact-details">
+            <a href="mailto:contact@whtl-dz.com">
+              <Mail size={21} />
+              <span>
+                <small>E-mail</small>
+                contact@whtl-dz.com
+              </span>
+            </a>
             <a href="mailto:groupe@whtl-dz.com">
               <Mail size={21} />
               <span>
@@ -1515,14 +1522,21 @@ function ContactPage({ language }: { language: Language }) {
                 groupe@whtl-dz.com
               </span>
             </a>
-            <a href="tel:+213561618238">
+            <a href="mailto:whtservice@hotmail.fr">
+              <Mail size={21} />
+              <span>
+                <small>E-mail</small>
+                whtservice@hotmail.fr
+              </span>
+            </a>
+            <a href="tel:+213560117109">
               <Phone size={21} />
               <span>
                 <small>Appeler</small>
-                +213 561 618 238
+                +213 560 11 71 09
               </span>
             </a>
-            <a href="https://wa.me/213561618238" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/213560117109" target="_blank" rel="noreferrer">
               <MessageCircle size={21} />
               <span>
                 <small>WhatsApp</small>
@@ -1551,8 +1565,10 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
         <strong>WHTL</strong>
         <p>Freight forwarding, consignation maritime, transport exceptionnel et Heavy Lift.</p>
         <div className="footer-contact">
+          <a href="mailto:contact@whtl-dz.com">contact@whtl-dz.com</a>
           <a href="mailto:groupe@whtl-dz.com">groupe@whtl-dz.com</a>
-          <a href="tel:+213561618238">+213 561 618 238</a>
+          <a href="mailto:whtservice@hotmail.fr">whtservice@hotmail.fr</a>
+          <a href="tel:+213560117109">+213 560 11 71 09</a>
           <span>Dimanche à jeudi · 8h00 à 16h00</span>
         </div>
       </div>
