@@ -542,7 +542,7 @@ function Header({
   return (
     <header className={`topbar ${solid ? "topbar--solid" : ""}`}>
       <LinkButton className="brand" to="/" navigate={navigate}>
-        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
+        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 52, width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
         <span className="brand-name">WHTL</span>
       </LinkButton>
 
@@ -710,7 +710,7 @@ function HomePage({
         <div className="hero-scrim" />
         <div className="hero-content">
           <p className="hero-kicker">Freight Forwarding & Ship Agency Services</p>
-          <p className="hero-motto" dir="rtl" lang="ar">شعارنا : السلامة – الدقة – الالتزام</p>
+          <p className="hero-motto">Sécurité • Précision • Engagement</p>
           <h1>La logistique des projets les plus complexes.</h1>
           <p className="hero-copy">
             WHTL gère vos opérations logistiques, portuaires et de transport exceptionnel en
@@ -1562,10 +1562,10 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
   return (
     <footer className="footer">
       <div className="footer-brand">
-        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
+        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 52, width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
         <strong>WHTL</strong>
         <p>Freight forwarding, consignation maritime, transport exceptionnel et Heavy Lift.</p>
-        <p className="footer-motto" lang="en">OUR MOTTO : Safety – Precision – Commitment</p>
+        <p className="footer-motto">Sécurité • Précision • Engagement</p>
         <div className="footer-contact">
           <a href="mailto:contact@whtl-dz.com">contact@whtl-dz.com</a>
           <a href="mailto:groupe@whtl-dz.com">groupe@whtl-dz.com</a>
