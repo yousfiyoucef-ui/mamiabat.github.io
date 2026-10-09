@@ -542,7 +542,7 @@ function Header({
   return (
     <header className={`topbar ${solid ? "topbar--solid" : ""}`}>
       <LinkButton className="brand" to="/" navigate={navigate}>
-        <span className="brand-mark">W</span>
+        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
         <span className="brand-name">WHTL</span>
       </LinkButton>
 
@@ -1561,7 +1561,7 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
   return (
     <footer className="footer">
       <div className="footer-brand">
-        <span className="brand-mark">W</span>
+        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 48, width: "auto", background: "#ffffff", borderRadius: 6, padding: 3, display: "block" }} />
         <strong>WHTL</strong>
         <p>Freight forwarding, consignation maritime, transport exceptionnel et Heavy Lift.</p>
         <div className="footer-contact">
