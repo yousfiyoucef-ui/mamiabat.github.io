@@ -6,14 +6,14 @@ const en: Record<string, string> = {
   "Navigation principale": "Main navigation",
   "Ouvrir le menu": "Open menu",
   "Menu mobile": "Mobile menu",
-  "A propos": "About",
-  Equipements: "Equipment",
+  "À propos": "About",
+  "Équipements": "Equipment",
   Ressources: "Resources",
   Solutions: "Solutions",
   Contact: "Contact",
   Devis: "Quote",
   "Choisir un secteur": "Choose an industry",
-  "Solutions par industrie, service et equipement.": "Solutions by industry, service and equipment.",
+  "Solutions par industrie, service et équipement.": "Solutions by industry, service and equipment.",
   "Freight Forwarding & Ship Agency Services": "Freight Forwarding & Ship Agency Services",
   "La logistique des projets les plus complexes.": "Logistics for the most complex projects.",
   "WHTL gère vos opérations logistiques, portuaires et de transport exceptionnel en Algérie, depuis l'étude technique jusqu'à la réalisation sur le terrain.":
@@ -110,13 +110,13 @@ const en: Record<string, string> = {
   "Parlons aujourd'hui": "Talk to us today",
   "De quoi avez-vous besoin ?": "What do you need help with?",
   "Un nouveau projet ou un projet en cours": "A new or existing project",
-  "Dimension, poids, acces, planning: on t'aide a cadrer la methode.":
+  "Dimensions, poids, accès, planning : nous vous aidons à définir la méthode.":
     "Dimensions, weight, access and schedule: we help define the right method.",
-  "Une demande generale": "A general inquiry",
+  "Une demande générale": "A general inquiry",
   "Question commerciale, disponibilite, documentation ou rendez-vous.":
     "Commercial question, availability, documentation or meeting request.",
   "Trouver l'agence la plus proche": "Find the nearest team",
-  "Equipe locale, zone d'intervention et point de contact projet.":
+  "Équipe locale, zone d'intervention et interlocuteur projet.":
     "Local team, operating area and project contact.",
   "Travailler avec WHTL": "Work with WHTL",
   "Opérations, ingénierie, coordination portuaire et supervision terrain.":
@@ -134,15 +134,15 @@ const en: Record<string, string> = {
   "Voir les médias suivants": "View next media",
   Photo: "Photo",
   Vidéo: "Video",
-  "Etudes de cas": "Case studies",
-  "Operations recentes, presentees en cartes visuelles.": "Recent operations presented as visual case studies.",
+  "Études de cas": "Case studies",
+  "Opérations récentes, présentées en cartes visuelles.": "Recent operations presented as visual case studies.",
   "Tous les projets": "All projects",
   "Transition industrielle": "Industrial transition",
   "Faire avancer les grands projets sans ralentir le terrain.":
     "Move major projects forward without slowing field operations.",
-  "Nos equipes combinent calculs d'ingenierie, simulations d'itineraire, planning de levage et execution chantier pour reduire les risques et garder le projet en mouvement.":
+  "Nos équipes combinent calculs d'ingénierie, simulations d'itinéraire, planning de levage et exécution chantier pour réduire les risques et garder le projet en mouvement.":
     "Our teams combine engineering calculations, route simulations, lifting schedules and site execution to reduce risk and keep projects moving.",
-  "Construire la methode": "Build the method",
+  "Construire la méthode": "Build the method",
   "Solutions par secteur": "Solutions by industry",
   "Logistique de projet intégrée": "Integrated project logistics",
   "WHTL coordonne les études, les autorisations, le transport, les opérations portuaires et l'exécution sur site.":
@@ -154,25 +154,25 @@ const en: Record<string, string> = {
   "Une flotte spécialisée pour le transport exceptionnel, la manutention lourde et le montage industriel.":
     "A specialized fleet for abnormal transport, heavy handling and industrial installation.",
   Tous: "All",
-  "Voir le detail": "View details",
-  "Selection technique selon charge, portee, sol et contraintes d'acces.":
+  "Voir le détail": "View details",
+  "Sélection technique selon la charge, la portée, le sol et les contraintes d'accès.":
     "Technical selection based on load, reach, ground conditions and access constraints.",
-  "Preparation transport, mobilisation, assemblage et verification HSE.":
+  "Préparation du transport, mobilisation, assemblage et vérification HSE.":
     "Transport preparation, mobilization, assembly and HSE verification.",
-  "Execution controlee avec superviseur, riggers et instrumentation.":
+  "Exécution contrôlée avec superviseur, riggers et instrumentation.":
     "Controlled execution with supervisors, riggers and instrumentation.",
   "References projet": "Project references",
   "Quelques exemples des opérations que nos équipes peuvent étudier, coordonner et réaliser.":
     "Examples of operations our teams can engineer, coordinate and execute.",
   "Étude, préparation, autorisations, mobilisation des équipements et supervision opérationnelle.":
     "Engineering, preparation, permits, equipment mobilization and operational supervision.",
-  "Demander une methode similaire": "Request a similar method",
+  "Demander une méthode similaire": "Request a similar method",
   "Expertise et méthodes": "Expertise and methods",
   "Notes techniques sur le transport exceptionnel, la consignation maritime et l'ingénierie Heavy Lift.":
     "Technical insights on abnormal transport, ship agency and Heavy Lift engineering.",
-  "Articles, methodes, videos et notes techniques": "Articles, methods, videos and technical notes",
+  "Articles, méthodes, vidéos et notes techniques": "Articles, methods, videos and technical notes",
   Article: "Article",
-  "A lire": "Read",
+  "À lire": "Read",
   "Lire / demander": "Read / inquire",
   "Un groupe logistique ancré sur le terrain.": "A logistics group grounded in field operations.",
   "WHTL accompagne les projets industriels complexes grâce à ses équipes, ses filiales et son réseau de partenaires.":
@@ -340,8 +340,8 @@ export function useSiteLanguage(language: Language, disabled = false) {
     document.documentElement.lang = language;
     document.title =
       language === "fr"
-        ? "WHTL | Freight Forwarding & Consignation maritime"
-        : "WHTL | Freight Forwarding & Ship Agency Services";
+        ? "WHTL Service | Transport exceptionnel, levage lourd et logistique de projets"
+        : "WHTL Service | Heavy haulage, heavy lift and project logistics";
     const description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     if (description) {
       description.content =

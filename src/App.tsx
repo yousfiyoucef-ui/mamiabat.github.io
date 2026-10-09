@@ -553,16 +553,16 @@ function Header({
           <ChevronDown size={16} />
         </button>
         <LinkButton className="nav-link" to="/case-studies" navigate={navigate}>
-          Etudes de cas
+          Études de cas
         </LinkButton>
         <LinkButton className="nav-link" to="/equipment" navigate={navigate}>
-          Equipements
+          Équipements
         </LinkButton>
         <LinkButton className="nav-link" to="/resources" navigate={navigate}>
           Ressources
         </LinkButton>
         <LinkButton className="nav-link" to="/about" navigate={navigate}>
-          A propos
+          À propos
         </LinkButton>
         <LinkButton className="nav-link" to="/news" navigate={navigate}>
           News
@@ -627,7 +627,7 @@ function MegaMenu({ navigate }: { navigate: (path: string) => void }) {
       <div className="mega-grid">
         <div>
           <p className="section-kicker">Choisir un secteur</p>
-          <h2>Solutions par industrie, service et equipement.</h2>
+          <h2>Solutions par industrie, service et équipement.</h2>
           <div className="mega-actions">
             {services.map((service) => (
               <LinkButton key={service.slug} to={`/services/${service.slug}`} navigate={navigate}>
@@ -677,10 +677,10 @@ function MobileMenu({
   return (
     <nav className="mobile-menu" aria-label="Menu mobile">
       <button onClick={() => go("/how-we-help")}>Solutions</button>
-      <button onClick={() => go("/case-studies")}>Etudes de cas</button>
-      <button onClick={() => go("/equipment")}>Equipements</button>
+      <button onClick={() => go("/case-studies")}>Études de cas</button>
+      <button onClick={() => go("/equipment")}>Équipements</button>
       <button onClick={() => go("/resources")}>Ressources</button>
-      <button onClick={() => go("/about")}>A propos</button>
+      <button onClick={() => go("/about")}>À propos</button>
       <button onClick={() => go("/news")}>News</button>
       <button onClick={() => go("/contact")}>Devis</button>
       <div className="mobile-language" data-no-translate>
@@ -860,7 +860,7 @@ function EquipmentPreview({ navigate }: { navigate: (path: string) => void }) {
   return (
     <section className="split-showcase">
       <div>
-        <p className="section-kicker">Equipements</p>
+        <p className="section-kicker">Équipements</p>
         <h2>Une flotte dédiée au Heavy Transport & Heavy Lifting.</h2>
         <p>
           Remorques THP/SL, tracteurs Heavy Haul, portiques SBL, vérins hydrauliques et systèmes
@@ -957,17 +957,17 @@ function TalkToUsBlock({ navigate }: { navigate: (path: string) => void }) {
   const options = [
     {
       title: "Un nouveau projet ou un projet en cours",
-      body: "Dimension, poids, acces, planning: on t'aide a cadrer la methode.",
+      body: "Dimensions, poids, accès, planning : nous vous aidons à définir la méthode.",
       to: "/contact",
     },
     {
-      title: "Une demande generale",
+      title: "Une demande générale",
       body: "Question commerciale, disponibilite, documentation ou rendez-vous.",
       to: "/contact",
     },
     {
       title: "Trouver l'agence la plus proche",
-      body: "Equipe locale, zone d'intervention et point de contact projet.",
+      body: "Équipe locale, zone d'intervention et interlocuteur projet.",
       to: "/about",
     },
     {
@@ -1088,7 +1088,7 @@ function MediaGallery() {
 function CasesPreview({ navigate }: { navigate: (path: string) => void }) {
   return (
     <section className="projects">
-      <SectionTitle kicker="Etudes de cas" title="Operations recentes, presentees en cartes visuelles." />
+      <SectionTitle kicker="Études de cas" title="Opérations récentes, présentées en cartes visuelles." />
       <div className="case-grid">
         {cases.slice(0, 3).map((item) => (
           <article className="case-card" key={item.title}>
@@ -1116,11 +1116,10 @@ function TransitionBlock({ navigate }: { navigate: (path: string) => void }) {
         <h2>Faire avancer les grands projets sans ralentir le terrain.</h2>
       </div>
       <p>
-        Nos equipes combinent calculs d'ingenierie, simulations d'itineraire, planning de levage et
-        execution chantier pour reduire les risques et garder le projet en mouvement.
+        Nos équipes combinent calculs d'ingénierie, simulations d'itinéraire, planning de levage et exécution chantier pour réduire les risques et garder le projet en mouvement.
       </p>
       <LinkButton className="text-action" to="/contact" navigate={navigate}>
-        Construire la methode
+        Construire la méthode
         <ArrowRight size={18} />
       </LinkButton>
     </section>
@@ -1224,7 +1223,7 @@ function EquipmentPage({ navigate }: { navigate: (path: string) => void }) {
   return (
     <>
       <PageHero
-        kicker="Equipements"
+        kicker="Équipements"
         title="Flotte et équipements"
         body="Une flotte spécialisée pour le transport exceptionnel, la manutention lourde et le montage industriel."
         image={mediaPath("received_1003047622117156.jpeg")}
@@ -1250,7 +1249,7 @@ function EquipmentPage({ navigate }: { navigate: (path: string) => void }) {
                 <h2>{item.title}</h2>
                 <p>{item.capacity}</p>
                 <LinkButton to={`/equipment/${item.slug}`} navigate={navigate}>
-                  Voir le detail
+                  Voir le détail
                   <ArrowRight size={16} />
                 </LinkButton>
               </div>
@@ -1276,7 +1275,7 @@ function EquipmentDetailPage({
       <PageHero kicker={item.category} title={item.title} body={item.body} image={item.image} />
       <section className="detail-layout">
         <aside>
-          <p className="section-kicker">Equipements</p>
+          <p className="section-kicker">Équipements</p>
           {equipment.map((entry) => (
             <LinkButton
               key={entry.slug}
@@ -1294,15 +1293,15 @@ function EquipmentDetailPage({
           <div className="process-grid">
             <div>
               <strong>01</strong>
-              <span>Selection technique selon charge, portee, sol et contraintes d'acces.</span>
+              <span>Sélection technique selon la charge, la portée, le sol et les contraintes d'accès.</span>
             </div>
             <div>
               <strong>02</strong>
-              <span>Preparation transport, mobilisation, assemblage et verification HSE.</span>
+              <span>Préparation du transport, mobilisation, assemblage et vérification HSE.</span>
             </div>
             <div>
               <strong>03</strong>
-              <span>Execution controlee avec superviseur, riggers et instrumentation.</span>
+              <span>Exécution contrôlée avec superviseur, riggers et instrumentation.</span>
             </div>
           </div>
         </article>
@@ -1315,9 +1314,9 @@ function CaseStudiesPage({ navigate }: { navigate: (path: string) => void }) {
   return (
     <>
       <PageHero
-        kicker="Etudes de cas"
+        kicker="Études de cas"
         title="References projet"
-        body="Cartes detaillees avec grande image, secteur, probleme, methode et appel contact."
+        body="Cartes détaillées avec grande image, secteur, problématique, méthode et contact."
         image={mediaPath("Messenger_creation_1937362816978940.jpeg")}
       />
       <section className="listing-section">
@@ -1330,7 +1329,7 @@ function CaseStudiesPage({ navigate }: { navigate: (path: string) => void }) {
                 <h3>{item.title}</h3>
                 <p>Étude, préparation, autorisations, mobilisation des équipements et supervision opérationnelle.</p>
                 <LinkButton to="/contact" navigate={navigate}>
-                  Demander une methode similaire
+                  Demander une méthode similaire
                   <ArrowRight size={16} />
                 </LinkButton>
               </div>
@@ -1354,14 +1353,14 @@ function ResourcesPage({ navigate }: { navigate: (path: string) => void }) {
       <section className="listing-section">
         <div className="resource-toolbar">
           <Search size={20} />
-          <span>Articles, methodes, videos et notes techniques</span>
+          <span>Articles, méthodes, vidéos et notes techniques</span>
         </div>
         <div className="resource-grid">
           {resources.map((title, index) => (
             <article className="resource-card" key={title}>
               <img src={cases[index % cases.length].image} alt={title} />
               <div>
-                <span>{index % 2 === 0 ? "Article" : "A lire"}</span>
+                <span>{index % 2 === 0 ? "Article" : "À lire"}</span>
                 <h2>{title}</h2>
                 <LinkButton to="/contact" navigate={navigate}>
                   Lire / demander
@@ -1380,7 +1379,7 @@ function AboutPage({ navigate }: { navigate: (path: string) => void }) {
   return (
     <>
       <PageHero
-        kicker="A propos"
+        kicker="À propos"
         title="Un groupe logistique ancré sur le terrain."
         body="WHTL accompagne les projets industriels complexes grâce à ses équipes, ses filiales et son réseau de partenaires."
         image={mediaPath("received_1371596501494574.jpeg")}
@@ -1582,10 +1581,10 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
             Solutions
           </LinkButton>
           <LinkButton to="/equipment" navigate={navigate}>
-            Equipements
+            Équipements
           </LinkButton>
           <LinkButton to="/case-studies" navigate={navigate}>
-            Etudes de cas
+            Études de cas
           </LinkButton>
         </div>
         <div>
@@ -1599,7 +1598,7 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
         <div>
           <h3>Groupe</h3>
           <LinkButton to="/about" navigate={navigate}>
-            A propos
+            À propos
           </LinkButton>
           <LinkButton to="/resources" navigate={navigate}>
             Ressources
@@ -1611,7 +1610,7 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
       </div>
       <div className="footer-bottom">
         <span>© 2026 WHTL</span>
-        <span>Developed by SITEMAGIQUE</span>
+        <span>EURL WHTL Service – Groupe WHTL-MAMIABAT</span>
       </div>
       <div className="motto-strip--bottom" lang="en">OUR MOTTO : Safety – Precision – Commitment</div>
     </footer>
