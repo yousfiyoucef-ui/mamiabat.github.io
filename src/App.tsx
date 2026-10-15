@@ -543,7 +543,7 @@ function Header({
     <header className={`topbar ${solid ? "topbar--solid" : ""}`}>
       <div className="motto-strip" dir="rtl" lang="ar">شعارنا : السلامة – الدقة – الالتزام</div>
       <LinkButton className="brand" to="/" navigate={navigate}>
-        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 52, width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
+        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ , width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
         <span className="brand-name">WHTL</span>
       </LinkButton>
 
@@ -1562,7 +1562,7 @@ function Footer({ navigate }: { navigate: (path: string) => void }) {
   return (
     <footer className="footer">
       <div className="footer-brand">
-        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 52, width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
+        <img src="/media/whtl-logo-2026.png" alt="WHTL Service" style={{ height: 76, width: "auto", display: "block", filter: "drop-shadow(0 0 1.5px rgba(255,255,255,0.9)) drop-shadow(0 0 1.5px rgba(255,255,255,0.9))" }} />
         <strong>WHTL</strong>
         <p>Freight forwarding, consignation maritime, transport exceptionnel et Heavy Lift.</p>
         <p className="footer-motto">Sécurité • Précision • Engagement</p>
