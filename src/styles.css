@@ -2972,7 +2972,7 @@ img {
   position: fixed;
   inset: 0;
   z-index: 40;
-  background: url("/media/whtl-logo-2026.png") center / min(62vw, 560px) no-repeat;
+  background-image: url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"), url("/media/whtl-logo-2026.png"); background-position: 12% 12%, 50% 12%, 88% 12%, 12% 50%, 50% 50%, 88% 50%, 12% 88%, 50% 88%, 88% 88%; background-size: auto min(22vh, 26vw); background-repeat: no-repeat;
   opacity: 0.05;
   pointer-events: none;
 }
