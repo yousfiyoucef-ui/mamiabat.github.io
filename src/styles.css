@@ -3278,3 +3278,124 @@ img {
   font-size: 0.92rem;
   -webkit-line-clamp: 4;
 }
+
+/* ---------------- MENU « SOLUTIONS » (méga-menu) ---------------- */
+.mega-menu {
+  top: 128px !important;
+  width: min(1080px, calc(100vw - 48px)) !important;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  border-radius: 0 0 12px 12px;
+  border-top: 3px solid var(--whtl-red);
+  box-shadow: 0 24px 60px rgba(15, 25, 45, 0.25) !important;
+}
+
+.mega-grid {
+  grid-template-columns: 1.25fr 1fr 1fr !important;
+  gap: 12px !important;
+  padding: 22px !important;
+  background: #ffffff !important;
+}
+
+.mega-grid > * {
+  padding: 0 !important;
+}
+
+.mega-grid > div:first-child {
+  grid-row: span 2;
+  padding: 6px 22px 6px 6px !important;
+  border-right: 1px solid var(--whtl-line);
+}
+
+.mega-grid h2 {
+  margin: 8px 0 16px !important;
+  font-size: 1.3rem !important;
+  line-height: 1.25 !important;
+}
+
+.mega-actions {
+  gap: 2px !important;
+}
+
+.mega-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: var(--whtl-ink) !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+.mega-actions a::after {
+  content: "→";
+  color: var(--whtl-red);
+}
+
+.mega-actions a:hover {
+  background: var(--whtl-soft);
+  color: var(--whtl-red) !important;
+}
+
+.mega-sector {
+  min-height: 0 !important;
+  padding: 16px 18px !important;
+  border: 1px solid var(--whtl-line);
+  border-radius: 10px;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+
+.mega-sector svg {
+  flex: none;
+  color: var(--whtl-red);
+}
+
+.mega-sector:hover {
+  background: #fff5f4 !important;
+  border-color: var(--whtl-red);
+  color: var(--whtl-ink) !important;
+}
+
+.mega-sector strong {
+  margin-bottom: 4px !important;
+  font-size: 0.95rem;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+.mega-sector small {
+  color: var(--whtl-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------------- ESPACEMENTS : moins de vide entre les sections ---------------- */
+.sector-band,
+.services,
+.projects,
+.transition,
+.split-showcase,
+.fleet-facts,
+.authorities-block,
+.partners-block,
+.talk-block,
+.used-equipment,
+.media-library,
+.listing-section,
+.detail-layout,
+.values-band,
+.contact-page,
+.news-home,
+.news-page-list {
+  padding-block: clamp(44px, 5vw, 76px) !important;
+}
+
+.section-heading,
+.news-home__heading {
+  margin-bottom: 24px !important;
+}
+
+.page-hero {
+  min-height: 52vh !important;
+}
