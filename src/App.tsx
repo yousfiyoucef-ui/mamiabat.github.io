@@ -472,6 +472,37 @@ function App() {
     }
   }, [pathname]);
 
+  // Le menu « Solutions » se ferme quand on change de page, quand on fait défiler,
+  // quand on clique en dehors ou avec la touche Échap.
+  useEffect(() => {
+    setMegaOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!megaOpen) return;
+    const startY = window.scrollY;
+    const onScroll = () => {
+      if (Math.abs(window.scrollY - startY) > 60) setMegaOpen(false);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMegaOpen(false);
+    };
+    const onPointer = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null;
+      if (target && !target.closest(".mega-menu") && !target.closest(".nav-button")) {
+        setMegaOpen(false);
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onPointer);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onPointer);
+    };
+  }, [megaOpen]);
+
   if (page === "admin") {
     return <AdminPage language={language} setLanguage={setLanguage} />;
   }
